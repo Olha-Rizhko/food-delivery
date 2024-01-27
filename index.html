@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./special-offers/style.css" />
 
     <link rel="stylesheet" href="./footer/footer.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
   </head>
   <body>
     <header>
@@ -282,45 +283,54 @@
         <button class="btn-subscribe">Subscribe</button>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <form>
-          <button type="button">X</button>
+          <button type="button" class="modal-btn">X</button>
           <p class="form-title">Order Form</p>
           <div class="form-user-name">
-            <label for="user-name">Name</label
-            ><input
-              type="text"
-              name="user-name"
-              id="user-name"
-              placeholder="Your name"
-              pattern="\w{3,25}"
-              required
-            />
+            <label for="user-name" class="label-modal">Name</label>
+            <div class="input-user-inf">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Your name"
+                pattern="\w{3,25}"
+                required
+                class="input-modal"
+              />
+            </div>
           </div>
-          <div class="form-user-tel">
-            <label for="user-tel">Phone number</label
-            ><input
-              type="tel"
-              name="user-tel"
-              id="user-tel"
-              placeholder="+38(0_ _) _ _ _   _ _   _ _"
-              pattern="[0-9]{3}"
-              required
-            />
+          <div class="form-user-name">
+            <label for="user-tel" class="label-modal">Phone number</label>
+            <div class="input-user-inf">
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                pattern="[0-9]{3}"
+                required
+                class="input-modal"
+              />
+            </div>
           </div>
           <div class="form-user-email">
-            <label for="user-email">E-mail</label
-            ><input
-              type="email"
-              name="user-email"
-              id="user-email"
-              placeholder="example@gmail.com"
-              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-              required
-            />
+            <label for="user-email" class="label-modal">E-mail</label>
+            <div class="input-user-inf">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="example@gmail.com"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                required
+                class="input-modal"
+              />
+            </div>
           </div>
-          <button type="submit">Send</button>
+          <button type="submit" class="sumbit-btn">Send</button>
         </form>
       </div>
     </div>
