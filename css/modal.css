@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+.backdrop {
+    background-color:rgba(94, 99, 99, 0.70);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    transition: opasity 250ms cubic-bezier(0.4,0,0.2,1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 458px;
+    height: 449px;
+    border-radius: 30px;
+    background: #FFE550;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    position: absolute;
+    padding: 32px;
+}
+.modal-btn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10.62px;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.form-title {
+    color:#2C2C2C;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-user-name {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.form-user-email {
+    margin-bottom: 32px;
+}
+.sumbit-btn {
+    display: flex;
+    width: 106px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    color: #2C2C2C;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 2px solid #7EB101;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.input-modal {
+    border-radius: 30px;
+    border: 1px solid rgba(18, 18, 18, 0.12);
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
+    width: 100%;
+    height: 48px;
+    padding-left: 12px;
+    margin-top: 2px;
+    outline: transparent;
+}
+.input-user-inf {
+    position: relative;
+}
+.label-modal {
+    color:#2C2C2C;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    padding-left: 12px;
+}
+.input-modal::placeholder {
+    color: #C4C4C4;
+    font-size: 16px;
+    line-height: 20px;
+}
+.input-modal:hover, .input-modal:focus {
+    border-color: #7EB101;
+}
+.sumbit-btn:hover, .sumbit-btn:focus {
+    background-color: #7EB101;
+}
