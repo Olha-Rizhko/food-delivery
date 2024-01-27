@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-    <link rel="stylesheet" href="./css/favorites.css">
-
+    <link rel="stylesheet" href="./css/favorites.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,12 +19,9 @@
 
     <link rel="stylesheet" href="/css/castomers.css" />
 
-
     <link rel="stylesheet" href="./special-offers/style.css" />
 
     <link rel="stylesheet" href="./footer/footer.css" />
-
-
   </head>
   <body>
     <header>
@@ -68,7 +63,6 @@
             <img src="./images/rocket.png" alt="icon rocket" />
             <h3>Fasest Delivery</h3>
 
-
             <p>
               Our advanced logistics system and dedicated delivery partners
               ensure that your meals are delivered to you within 30-minutes.
@@ -84,7 +78,7 @@
             </p>
           </li>
 
-
+          <li>
             <p>
               Our advanced logistics system and dedicated delivery partners
               ensure that your meals are delivered to you within 30-minutes.
@@ -99,8 +93,6 @@
               clicks.
             </p>
           </li>
-
-
         </ul>
         <button type="button">Order Now</button>
       </section>
@@ -114,7 +106,6 @@
           <li><img src="./images/chicken.png" alt="Chicken" /></li>
           <li><img src="./images/salat.png" alt="Salat" /></li>
           <li><img src="./images/borshch.png" alt="Borshch" /></li>
-
         </ul>
         <button type="button">Order Now</button>
       </section>
@@ -132,18 +123,52 @@
           </ul>
         </div> -->
         <div class="container">
-          <h2 class="favorites-title">Some of Our Favorites</h2>
-          <p class="favorites-text">Looking for something delicious?</p>
-          <ul class="favorites-list">
-            <li class="favorites-list-item"><div class="img-wrap"><img src="./images/pasta.png" alt="Pasta" /></div></li>
-            <li class="favorites-list-item"><div class="img-wrap"><img src="./images/pizza.png" alt="Pizza" /></div></li>
-            <li class="favorites-list-item"><div class="img-wrap"><img src="./images/chicken.png" alt="Chicken" /></div></li>
-            <li class="favorites-list-item"><div class="img-wrap"><img src="./images/gamburger.png" alt="Gamburger" /></div></li>
-            <li class="favorites-list-item"><div class="img-wrap"><img src="./images/salat.png" alt="Salat" /></div></li>
-            <li class="favorites-list-item"><div class="img-wrap"><img src="./images/borshch.png" alt="Borshch" /></div></li>
-          </ul>
-        </div>
-
+                   
+          <h2 class="favorites-title">Some of Our Favorites</h2>
+                   
+          <p class="favorites-text">Looking for something delicious?</p>
+                   
+          <ul class="favorites-list">
+                       
+            <li class="favorites-list-item">
+              <div class="img-wrap">
+                <img src="./images/pasta.png" alt="Pasta" />
+              </div>
+            </li>
+                       
+            <li class="favorites-list-item">
+              <div class="img-wrap">
+                <img src="./images/pizza.png" alt="Pizza" />
+              </div>
+            </li>
+                       
+            <li class="favorites-list-item">
+              <div class="img-wrap">
+                <img src="./images/chicken.png" alt="Chicken" />
+              </div>
+            </li>
+                       
+            <li class="favorites-list-item">
+              <div class="img-wrap">
+                <img src="./images/gamburger.png" alt="Gamburger" />
+              </div>
+            </li>
+                       
+            <li class="favorites-list-item">
+              <div class="img-wrap">
+                <img src="./images/salat.png" alt="Salat" />
+              </div>
+            </li>
+                       
+            <li class="favorites-list-item">
+              <div class="img-wrap">
+                <img src="./images/borshch.png" alt="Borshch" />
+              </div>
+            </li>
+                     
+          </ul>
+                 
+        </div>
       </section>
 
       <section>
@@ -257,5 +282,47 @@
         <button class="btn-subscribe">Subscribe</button>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <form>
+          <button type="button">X</button>
+          <p class="form-title">Order Form</p>
+          <div class="form-user-name">
+            <label for="user-name">Name</label
+            ><input
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Your name"
+              pattern="\w{3,25}"
+              required
+            />
+          </div>
+          <div class="form-user-tel">
+            <label for="user-tel">Phone number</label
+            ><input
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              pattern="[0-9]{3}"
+              required
+            />
+          </div>
+          <div class="form-user-email">
+            <label for="user-email">E-mail</label
+            ><input
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="example@gmail.com"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              required
+            />
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
