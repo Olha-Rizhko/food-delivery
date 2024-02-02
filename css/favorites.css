@@ -38,6 +38,7 @@
   background: #fefefe;
   padding: 32px;
 }
+
 .burger-none {
   display: none;
 }
@@ -61,3 +62,4 @@
     display: initial;
   }
 }
+
